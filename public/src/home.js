@@ -32,7 +32,11 @@ function getMostCommonGenres(books) {
   });
   const keys = Object.keys(genreObject);
   const values = Object.values(genreObject);
+<<<<<<< HEAD
   for (key in keys) {
+=======
+ for (key in keys) {
+>>>>>>> c3137e330b6dc91ee8cf557759935cbfd278f2e3
     genres[key] = {name:keys[key],count:values[key]}
   }
   // for (let i = 0; i < keys.length; i++) {
