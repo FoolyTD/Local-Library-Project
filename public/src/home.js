@@ -32,9 +32,12 @@ function getMostCommonGenres(books) {
   });
   const keys = Object.keys(genreObject);
   const values = Object.values(genreObject);
-  for (let i = 0; i < keys.length; i++) {
-    genres[i] = {name:keys[i],count:values[i]};
+  for (key in keys) {
+    genres[key] = {name:keys[key],count:values[key]}
   }
+  // for (let i = 0; i < keys.length; i++) {
+ //   genres[i] = {name:keys[i],count:values[i]};
+ // }
   return sortSlice(genres,5);
 };
 
